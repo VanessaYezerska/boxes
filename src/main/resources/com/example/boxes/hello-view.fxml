@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="350.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.boxes.HelloController">
+    <children>
+        <VBox minWidth="150.0" prefHeight="365.0" prefWidth="250.0">
+            <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Clear">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuClearAll" text="All" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuClearFirstHalf" text="First Half" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuClearSecondHalf" text="SecondHalf" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#getHelp" text="Box Help" />
+                     </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+                <Label prefHeight="45.0" prefWidth="140.0" text="CheckBox" textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" right="10.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Властивості людино-машинного інтерфейсу" wrappingWidth="180.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <CheckBox fx:id="answConsensus" mnemonicParsing="false" text="Погодженість">
+                    <VBox.margin>
+                        <Insets bottom="2.5" left="20.0" right="70.0" top="5.0" />
+                    </VBox.margin>
+                </CheckBox>
+                <CheckBox fx:id="answFriendship" mnemonicParsing="false" text="Дружність">
+                    <VBox.margin>
+                        <Insets bottom="2.5" left="20.0" right="70.0" top="2.5" />
+                    </VBox.margin>
+                </CheckBox>
+                <CheckBox fx:id="answFlexibility" mnemonicParsing="false" text="Гнучкість">
+                    <VBox.margin>
+                        <Insets bottom="2.5" left="20.0" right="70.0" top="2.5" />
+                    </VBox.margin>
+                </CheckBox>
+                <CheckBox fx:id="answComplexity" mnemonicParsing="false" text="Складність">
+                    <VBox.margin>
+                        <Insets bottom="2.5" left="20.0" right="70.0" top="2.5" />
+                    </VBox.margin>
+                </CheckBox>
+                <Button fx:id="btnGetAnswerToCheckBox" mnemonicParsing="false" onAction="#getAnswerToCheckBox" text="Відповісти">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="65.0" right="65.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Label fx:id="answerInCheckBox" prefHeight="259.0" prefWidth="185.0" text="label" wrapText="true">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+        <VBox minWidth="150.0" prefHeight="365.0" prefWidth="250.0">
+            <children>
+                <Label prefHeight="45.0" prefWidth="153.0" text="ChoiceBox" textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="35.0" right="35.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Файл sample.fxml відповідає за логіку програми" wrappingWidth="180.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <ChoiceBox fx:id="choiceBox" prefWidth="150.0">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="35.0" right="35.0" top="10.0" />
+                    </VBox.margin>
+                </ChoiceBox>
+                <Button fx:id="btnGetAnswerToChoiceBox" mnemonicParsing="false" onAction="#getAnswerToChoiceBox" text="Відповісти">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="65.0" right="65.0" />
+                    </VBox.margin>
+                </Button>
+                <Label fx:id="answerInChoiceBox" prefHeight="62.0" prefWidth="185.0" text="label" wrapText="true">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+            </children></VBox>
+        <VBox minWidth="150.0" prefHeight="365.0" prefWidth="250.0">
+            <children>
+                <Label prefHeight="45.0" prefWidth="153.0" text="CheckBox" textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="35.0" right="35.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дана модель надає п'ять частин в яких можуть розміщуватись компоненти: верхня, нижня, ліва, права та центральна" wrappingWidth="180.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <ComboBox fx:id="comboBox" onAction="#getAnswerInComboBox" prefWidth="150.0">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="35.0" right="35.0" top="10.0" />
+                    </VBox.margin>
+                </ComboBox>
+                <Label fx:id="answerInComboBox" prefHeight="62.0" prefWidth="185.0" text="label" wrapText="true">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+            </children></VBox>
+        <VBox prefHeight="365.0" prefWidth="250.0">
+            <children>
+                <Label prefHeight="45.0" prefWidth="169.0" text="RadioButton" textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="30.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="У якому меню середовища SceneBuilder можна змінити загальні налаштування компонент (Текст, Розмір, Шрифт)" wrappingWidth="180.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <RadioButton fx:id="RBtnProperties" mnemonicParsing="false" onAction="#getAnswerInRadioButton" text="Properties">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="50.0" right="50.0" top="10.0" />
+                    </VBox.margin>
+                </RadioButton>
+                <RadioButton fx:id="RBtnLayout" mnemonicParsing="false" onAction="#getAnswerInRadioButton" text="Layout">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                    </VBox.margin>
+                </RadioButton>
+                <RadioButton fx:id="RBtnCode" mnemonicParsing="false" onAction="#getAnswerInRadioButton" text="Code">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                    </VBox.margin>
+                </RadioButton>
+                <RadioButton fx:id="RBtnHierarchy" mnemonicParsing="false" onAction="#getAnswerInRadioButton" text="Hierarchy">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                    </VBox.margin>
+                </RadioButton>
+                <Label fx:id="answerInRadioButton" prefHeight="62.0" prefWidth="185.0" text="label" wrapText="true">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+            </children></VBox>
+    </children>
+</HBox>
